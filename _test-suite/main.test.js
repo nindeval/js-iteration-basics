@@ -89,35 +89,30 @@ describe('shortiesOnly()', function() {
 });
 
 describe('removeVowels()', function() {
-  console.assert( removeVowels('christmas') === 'chrstms' )
-  console.assert( removeVowels('moo shoo pork') === 'm sh prk' )
-
-  //should handle capital letters
-  console.assert( removeVowels('Out of Order') === 't f rdr' )
-  console.assert( removeVowels('Estados Unidos') === 'stds nds' )
-
 
   it('should be a function', function() {
     return expect(removeVowels).to.be.a('function');
   });
 
-  it('should return "chrstms" for "christmas"', function() {
-    return expect(removeVowels('christmas')).to.equal('chrstms');
+  it('should return "mlk" for "milk"', function() {
+    return expect(removeVowels('milk')).to.equal('mlk');
+  });
+
+  it('should return "Chrstms" for "Christmas"', function() {
+    return expect(removeVowels('Christmas')).to.equal('Chrstms');
   });
 
   it('should return "m sh prk" for "moo shoo pork"', function() {
     return expect(removeVowels('moo shoo pork')).to.equal('m sh prk');
   });
 
-  it('return "t f rdr" for "Out of Order"; should handle uppercase letters', function() {
+  it('return "t f rdr" for "Out of Order"; should also remove`x uppercase letters', function() {
     return expect(removeVowels('Out of Order')).to.equal('t f rdr');
   });
 
-  it('return "stds nds" for "Estados Unidos"; should handle uppercase letters', function() {
+  it('return "stds nds" for "Estados Unidos"; should also remove`x uppercase letters', function() {
     return expect(removeVowels('Estados Unidos')).to.equal('stds nds');
   });
-
-
 
 });
 
