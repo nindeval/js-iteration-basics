@@ -21,7 +21,7 @@ unzip assignment-files
 
 ### Instructions
 
-The goal of these exercises are to write the logic in the function to make the statements in the `console.assert()` equal true.
+The goal of these exercises are to write the logic in the function to make the statements in the `console.assert()` true.
 
 Here is an example:
 
@@ -36,12 +36,12 @@ Here is an example:
  **/
 
 
- // User Code
+ // Your Code
  //    You need to write the function so that you achieve the expected output
  //    in the console.assert(...) statements below.
 function makeArrayFromCharacters(str){
 
-  // Example solution
+  //    Example solution
   let characterArray = []
   for(var i = 0; i < str.length; i++){
     returnArray.push(str[0])
@@ -57,6 +57,7 @@ function makeArrayFromCharacters(str){
 
 let output1 = makeArrayFromCharacters('hello')
 let output2 = makeArrayFromCharacters('sunshine')
+let output3 = makeArrayFromCharacters('burrito')
 
 // => output1 should be ['h','e','l','l','o']
 console.assert( output1[0] === 'h' )
@@ -68,4 +69,10 @@ console.assert( output2[0] === 's' )
 console.assert( output2[1] === 'u' )
 console.assert( output2[2] === 'n' )
 console.assert( output2[3] === 's' )
+
+// => output3 should be ['b','u','r','r','i','t','o']
+console.assert( output2[0] === 'b' )
+console.assert( output2[1] === 'u' )
+console.assert( output2[2] === 'r' )
+console.assert( output2[5] === 't' )
 ```

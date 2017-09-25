@@ -8,7 +8,9 @@
  **/
 
 
-
+function arrayToString(arrayInput){
+  /* Your code below. Look at the console.asserts to se*/
+}
 
 
 
@@ -20,7 +22,15 @@
 var output1 = arrayToString(["Hello", "how", "are", "you"])
 
 var coolArr = ['cool', 'great', 'nice', 'awesome', 'sweet']
-var output2 = arrayToString(sugArr)
+var output2 = arrayToString(coolArr)
+
+var newArray = ['cool', 'great', 'awesome', 'super']
+var output3 = arrayToString(newArray)
+
+var lastARray = ['wow', 'great', 'wow', 'neat']
+var output4 = arrayToString(coolArr3)
 
 console.assert( output1 === "Hellohowareyou" )
 console.assert( output2 === 'coolgreatniceawesomesweet' )
+console.assert( output3 === 'coolgreatawesomesuper' )
+console.assert( output4 === 'wowgreatwowneat' )
