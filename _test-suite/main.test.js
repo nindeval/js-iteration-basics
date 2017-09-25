@@ -88,26 +88,37 @@ describe('shortiesOnly()', function() {
   });
 });
 
-describe('makeAcronym()', function() {
+describe('removeVowels()', function() {
+  console.assert( removeVowels('christmas') === 'chrstms' )
+  console.assert( removeVowels('moo shoo pork') === 'm sh prk' )
+
+  //should handle capital letters
+  console.assert( removeVowels('Out of Order') === 't f rdr' )
+  console.assert( removeVowels('Estados Unidos') === 'stds nds' )
+
+
   it('should be a function', function() {
-    return expect(makeAcronym).to.be.a('function');
+    return expect(removeVowels).to.be.a('function');
   });
 
-  it('should return "PDF" for "Portable Document Format"', function() {
-    return expect('Portable Document Format').to.equal('PDF');
+  it('should return "chrstms" for "christmas"', function() {
+    return expect(removeVowels('christmas')).to.equal('chrstms');
   });
 
-  it('should return "BRB" for "be right back"', function() {
-    return expect('be right back').to.equal('BRB');
+  it('should return "m sh prk" for "moo shoo pork"', function() {
+    return expect(removeVowels('moo shoo pork')).to.equal('m sh prk');
   });
 
-  it('should return "NBC" for "National Broadcasting Company"', function() {
-    return expect('National Broadcasting Company').to.equal('NBC');
+  it('return "t f rdr" for "Out of Order"; should handle uppercase letters', function() {
+    return expect(removeVowels('Out of Order')).to.equal('t f rdr');
   });
 
-  it('should return "DOD" for "Department of Defense"', function() {
-    return expect('Department of Defense').to.equal('DOD');
+  it('return "stds nds" for "Estados Unidos"; should handle uppercase letters', function() {
+    return expect(removeVowels('Estados Unidos')).to.equal('stds nds');
   });
+
+
+
 });
 
 describe('wordMatchInArray()', function() {
@@ -214,7 +225,23 @@ describe('getFirstLetters()', function() {
 
 describe('makeAcronym()', function() {
   it('should be a function', function() {
-    return expect().to.be.a('function');
+    return expect(makeAcronym).to.be.a('function');
+  });
+
+  it('should return "PDF" for "Portable Document Format"', function() {
+    return expect('Portable Document Format').to.equal('PDF');
+  });
+
+  it('should return "BRB" for "be right back"', function() {
+    return expect('be right back').to.equal('BRB');
+  });
+
+  it('should return "NBC" for "National Broadcasting Company"', function() {
+    return expect('National Broadcasting Company').to.equal('NBC');
+  });
+
+  it('should return "DOD" for "Department of Defense"', function() {
+    return expect('Department of Defense').to.equal('DOD');
   });
 });
 
