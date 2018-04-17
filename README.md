@@ -16,7 +16,7 @@ cd js-iteration-basics
 # (2) Download the assignment-files with curl from the assignment repo and unzip
 curl https://raw.githubusercontent.com/muktek/assignment--js-iteration-basics/master/assignment-files.zip > assignment-files.zip
 
-unzip assignment-files
+unzip assignment-files.zip
 ```
 
 ### Instructions
