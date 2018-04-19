@@ -2,7 +2,13 @@
  * arrayToString()
  *
  * Write a function called `arrayToString` that takes
- *  an array of values and combines them into one large string.
+ *  an array of string values and returns a string with
+ *  all of the values combined together.
+ *
+ *  Example:
+ *    var ex1 = arrayToString(['my','name','is','lina'])
+ *    console.log(ex1)
+ *        //-> 'mynameislina' 
  *
  * You must use a for-loop to solve this problem.
  **/
@@ -27,8 +33,8 @@ var output2 = arrayToString(coolArr)
 var newArray = ['cool', 'great', 'awesome', 'super']
 var output3 = arrayToString(newArray)
 
-var lastARray = ['wow', 'great', 'wow', 'neat']
-var output4 = arrayToString(coolArr3)
+var lastArray = ['wow', 'great', 'wow', 'neat']
+var output4 = arrayToString(lastArray)
 
 console.assert( output1 === "Hellohowareyou" )
 console.assert( output2 === 'coolgreatniceawesomesweet' )
