@@ -22,8 +22,8 @@ console.assert( makeAcronym('Bring Your Own Beverage') === 'BYOB' )
 console.assert( makeAcronym('National Broadcasting Company') === 'NBC' )
 console.assert( makeAcronym('Department of Defense') === 'DOD' )
 console.assert( makeAcronym('in case you missed it') === 'ICYMI' )
-console.assert( makeAcronym('if i recall correctly') === 'IIRC' )
-console.assert( makeAcronym('rest in peace') === 'RIP' )
+console.assert( makeAcronym('if I recall correctly') === 'IIRC' )
+console.assert( makeAcronym('Rest in Peace') === 'RIP' )
 
 
 
