@@ -18,8 +18,14 @@
 
 console.assert( makeAcronym('Portable Document Format') === 'PDF' );
 console.assert( makeAcronym('be right back') === 'BRB' )
+console.assert( makeAcronym('Bring Your Own Beverage') === 'BYOB' )
 console.assert( makeAcronym('National Broadcasting Company') === 'NBC' )
 console.assert( makeAcronym('Department of Defense') === 'DOD' )
+console.assert( makeAcronym('in case you missed it') === 'ICYMI' )
+console.assert( makeAcronym('if i recall correctly') === 'IIRC' )
+console.assert( makeAcronym('rest in peace') === 'RIP' )
+
+
 
 //Explorer Mode -- pass the argument a true/false value to
 //                 capture prepositions or not.
