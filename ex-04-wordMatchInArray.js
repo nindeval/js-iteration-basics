@@ -7,14 +7,19 @@
  *
 */
 
+function wordMatchInArray(Str, arr1){
+  var boolString = false
 
+  for(var i = 0; i < arr1.length; i++){
+    var parTy = arr1[i]
 
+    if(parTy == Str){
+      boolString = true
+    }
+  }
 
-
-
-
-
-
+  return boolString
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 var sampleWordsArray = ["because", "girls", "just", "want", "to", "have", "fun"]

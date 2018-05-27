@@ -10,7 +10,26 @@
 
 
 
+function removeVowels(str1){
+var strWithoutVowels = []
+  //var arrVowels = ['a','e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  for(var i = 0; i < str1.length; i++){
+  //console.log(str1[i])
+  var strLetters = str1[i].toLowerCase()
 
+    if(  strLetters !== 'a'
+      && strLetters !== 'e'
+      && strLetters !== 'i'
+      && strLetters !== 'o'
+      && strLetters !== 'u'){
+      strWithoutVowels.push(strLetters)
+    // console.log(strLetters)
+   }
+  }
+  var strConc = strWithoutVowels.join('')
+   console.log(strConc)
+  return strConc
+}
 
 
 

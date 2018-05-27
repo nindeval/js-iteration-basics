@@ -5,14 +5,28 @@
  * Write a function called `getFirstLetters` that takes an array of strings
  * and returns another array of strings with only the first letter
  *
- * Hint: you may want to invoke the `reverseString` function you wrote earlier
- * from the previous queestion
+
 */
 
+function getFirstLetters(arrStr){
+  var arrStrFirstLet = []
+  var varString = ''
 
+  for(var i = 0; i < arrStr.length; i++){
+    // console.log(arrStr)
+    var arrWord = arrStr[i]
+    // console.log(arrWord[0])
+    varString = arrWord[0]
+    // console.log(varString)
 
+    arrStrFirstLet.push(varString)
 
+  }
+  return arrStrFirstLet
+}
 
+const ejercicio8 = getFirstLetters(['lychee', 'basinica', 'agua mineral'])
+console.log(ejercicio8)
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 let outputArray1 = getFirstLetters(['wow', 'milk', 'howdy', 'sweet', 'bye'])

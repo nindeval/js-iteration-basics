@@ -9,11 +9,19 @@
 **/
 
 
+function countWordInArray(Str, Arr2){
+  var num1 = 0
 
+  for(var i = 0; i < Arr2.length; i++){
+    var stringPato = Arr2[i]
 
-
-
-
+    if(stringPato == Str){
+        num1++
+    }
+  }
+  // console.log(num1)
+  return num1
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

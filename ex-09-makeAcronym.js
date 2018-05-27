@@ -8,9 +8,22 @@
 //  => 'PDF'
 
 
+function makeAcronym(strName){
+    var acronymusStr = ''
+    acronymusStr = strName.split(' ')
+    var primerasLetras = ''
+    // console.log(acronymusStr[0])
 
+    for(var i = 0; i < acronymusStr.length; i++){
+      //console.log(acronymusStr[i])
+      // console.log(acronymusStr[i][0])
+      primerasLetras += acronymusStr[i][0].toUpperCase()
+    }
+    return primerasLetras
+}
 
-
+const ejercicio9 = makeAcronym('Department of Defense')
+console.log(ejercicio9)
 
 
 

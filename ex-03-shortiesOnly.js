@@ -9,7 +9,21 @@
 */
 
 
+function shortiesOnly(arrStrings){
+  var newArrStrings = []
 
+  for (var i = 0; i < arrStrings.length; i++){
+    var littleNameList = arrStrings[i]
+
+    if(littleNameList.length <= 4){
+      newArrStrings.push(littleNameList)
+    }
+
+  }
+
+  console.log('===')
+  return newArrStrings
+}
 
 
 
@@ -43,7 +57,7 @@ var moreNames = [
 
 
 var shortList = shortiesOnly(allNames)
-var littleNameList = shortiesOnly(allNames)
+var littleNameList = shortiesOnly(moreNames)
 
 
 console.assert( shortList.length === 4 )
@@ -54,8 +68,11 @@ console.assert( shortList.indexOf('Fred') >= 0 )
 // checks to see that WAYNE is NOT in the output array.
 console.assert( shortList.indexOf('Wayne') === -1 )
 
+
 // -- Test 2
+
 console.assert( littleNameList.length === 3 )
+console.log('----- Test 2 -----')
 console.assert( littleNameList.indexOf('Kate') >= 0 )
 console.assert( littleNameList.indexOf('Matt') >= 0 )
 console.assert( littleNameList.indexOf('Ken') >= 0 )

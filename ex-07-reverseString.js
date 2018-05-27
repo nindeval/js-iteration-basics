@@ -8,11 +8,20 @@
  *
 */
 
+function reverseString(str2){
+  var revChar = ''
+
+  for(var i = str2.length - 1; i >= 0; i--) {
+      //revChar += str2[i];  /** other way **/
+      revChar = revChar + str2[i]
+    }
+
+  return revChar
+
+}
 
 
-
-
-
+// hice el ejercicio de esta manera de acuerdo a lo que investigué en google, ¿hay otra manera de solucionarlo que más sencillo?
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 console.assert( reverseString('books') === 'skoob')

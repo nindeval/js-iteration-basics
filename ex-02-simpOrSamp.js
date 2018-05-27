@@ -1,4 +1,4 @@
-
+ 
 /**
  * simpOrSamp()
  *
@@ -16,7 +16,22 @@
  *
 */
 
+function simpOrSamp(arrSt1){
+  var arrSimpSamp = []
 
+  for(var i = 0; i < arrSt1.length; i++){
+    var elementArr = arrSt1[i]
+
+    if(elementArr.length <= 5){
+      arrSimpSamp.push(elementArr + ' Sampson')
+    } else if(elementArr.length > 5){
+      arrSimpSamp.push(elementArr + ' Simpson')
+    }
+
+  }
+
+  return arrSimpSamp
+}
 
 
 
